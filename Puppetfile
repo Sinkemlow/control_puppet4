@@ -8,7 +8,7 @@ mod "puppetlabs/apt", '4.4.1'
 mod "puppet/nginx", '0.9.0'
 mod "puppetlabs/firewall", '1.11.0'
 mod "puppetlabs/postgresql", '5.2.1'
-mod 'puppetlabs/logrotate', '3.1.0'
+mod 'puppet/logrotate', '3.1.0'
 
 # Profile Modules
 mod 'users',
