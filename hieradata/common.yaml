@@ -1,0 +1,18 @@
+---
+classes:
+ - 'profile::base'
+
+ntp::servers:
+  - 0.us.pool.ntp.org
+  - 1.us.pool.ntp.org
+  
+users::admins_users:
+  johnsmith:
+    comment:  'John Smith'
+    uid:      3001
+    password: '$6$Cn.ssop26jS1FO$LYH.qP67M0fg5Od1Tbtt9USFbnzJ8nEecY/X7c2I9XGqvH2J8qUciFNVMV7BKwGzKmPeJKMbXhIi1r19kV8TG1'
+
+users::admins_ssh_keys:
+  johnsmith:
+    user:     'johnsmith'
+    key:      'ABCDEFGHIJKLMNOPQRSTUVWXYZ='
