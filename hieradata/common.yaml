@@ -16,3 +16,16 @@ users::admins_ssh_keys:
   johnsmith:
     user:     'johnsmith'
     key:      'ABCDEFGHIJKLMNOPQRSTUVWXYZ='
+
+logrotate::rule { testlog:
+  create_owner => root,
+  create_group => root,
+  path         => "/var/log/testlog/*.log",
+  compress     => true,
+  copytruncate => true,
+  rotate       => 28,
+  rotate_every => day,
+  missingok    => true,
+  create       => true,
+  create_mode  => '664',
+}
