@@ -16,3 +16,8 @@ users::admins_ssh_keys:
   johnsmith:
     user:     'johnsmith'
     key:      'ABCDEFGHIJKLMNOPQRSTUVWXYZ='
+    
+users_app_user_id:    '4001'
+users_app_user_name:  'appuser'
+users_app_group_id:   '4001'
+users_app_group_name: 'appgroup'
